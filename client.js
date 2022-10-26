@@ -7,19 +7,20 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    console.log("connection succesful")
-  })
+    console.log("connection succesful");
+    conn.write("Name: Fig");
+  });
 
   conn.on("data", (data) => {
     console.log("Server says", data)
-  })
+  });
 
   conn.setEncoding("utf8");
 
   return conn;
-}
+};
 
 
-  module.exports = {
-    connect,
-  };
+module.exports = {
+  connect,
+};
