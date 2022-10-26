@@ -27,6 +27,15 @@ const handleUserInput = function (char) {
   if (char === 'd') {
     connection.write('Move: right')
   }
+  if (char === 'i') {
+    connection.write('Say: Im a sneakyy snek')
+  }
+  if (char === 'o') {
+    connection.write('Say: catch me if you can')
+  }
+  if (char === 'p') {
+    connection.write('Say: Suuhhhh dudess')
+  }
 };
 
 
